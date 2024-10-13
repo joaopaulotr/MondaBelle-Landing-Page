@@ -179,13 +179,13 @@ header.rolagem .nav-item :hover {
     flex-direction: column;
     text-align: center;
 
-    background-color: #565353; /* Fundo preto */
-    width: max-content; /* Ajusta a largura para cobrir as palavras */
-    padding-top: 1.5rem; /* Ajusta o espaçamento interno */
+    background-color: #565353; 
+    width: max-content;
+    padding-top: 1.5rem; 
     padding-right: 1.75rem;
     padding-left: 1.5rem;
     padding-bottom: 1.75rem;
-    border-radius: 0.5rem; /* Adiciona cantos arredondados */
+    border-radius: 0.5rem;
     margin-left: 4rem;
   }
 
@@ -207,7 +207,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
   color: var(--primary-color);
-  background-color: #f0f0f0; /* Adicione uma cor de fundo para melhor visualização */
+  background-color: #f0f0f0;
 }
 
 h1,
@@ -248,4 +248,15 @@ h6 {
   background-size: cover;
   background-position: center center;
   color: var(--white-color);
+}
+
+.white-bg {
+  background: var(--white-color);
+  color: var(--primary-color); /* Garantir contraste de cor */
+}
+
+.main-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: var(--gap);
 }

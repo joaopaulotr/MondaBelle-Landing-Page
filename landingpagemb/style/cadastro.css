@@ -32,7 +32,7 @@
   }
   
   .form-header .title h1 {
-    color: black;
+    color: #fff;
     font-size: 70px;
     font-weight: 900;
     text-align: center;
@@ -45,6 +45,7 @@
     font-variant: all-small-caps;
     letter-spacing: 3.36px;
     text-align: center;
+    color: #fff;
   }
   
   /* Grupo de Inputs */
