@@ -160,8 +160,8 @@
     font-weight: 400;
     text-decoration: none;
   
-    background-color: rgba(50, 50, 50, 0.8);
-    color: rgba(255, 255, 255, 0.8);
+    background-color: #fff;
+    color: #000000;
     padding: 10px 40px;
     border: none;
     border-radius: 3px;
@@ -171,7 +171,7 @@
   }
   
   .continue-button button:hover {
-    background-color: rgba(50, 50, 50, 0.949);
+    background-color: #8d8d8d;
   }
   
   @media (max-width: 768px) {
@@ -295,3 +295,8 @@
     z-index: 9;
   }
   
+
+  .blank{
+    margin-top: 75vh;
+    background-color: #fff;
+  }
