@@ -607,14 +607,17 @@ body {
 
 .team-section {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Padrão para desktop */
-  grid-template-columns: 150px 150px 150px 150px; 
+  grid-template-columns: repeat(5, 1fr); /* Padrão para desktop */
+  grid-template-columns: 150px 150px 150px 150px 150px; 
   gap: 20px; /* Reduzido o espaçamento entre os cards */
   padding: 20px;
   max-width: 1000px; /* Largura máxima reduzida */
   margin: 0 auto;
   justify-content: center;
 }
+
+
+
 
 .member-card {
   background-color: white;
@@ -633,7 +636,6 @@ body {
 
 .member-card img {
   width: 100%;
-  height: auto;
   border-radius: 8px;
   max-width: 150px; /* Reduzido o tamanho máximo da imagem */
   margin-bottom: 10px; /* Reduzido o espaçamento abaixo da imagem */

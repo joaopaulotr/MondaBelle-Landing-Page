@@ -1,6 +1,5 @@
 .container {
   background-color: rgba(0, 0, 0, 0.5);
-  background-image: url("../assets/imagecadastromini.png");
   max-width: 800;
   max-height: 1680;
   margin: 0 auto;
@@ -12,7 +11,6 @@
 }
 
 form {
-  background-color: rgba(238, 238, 238, 0.7);
   padding: 30px;
   margin: 20px;
   border-radius: 30px;
@@ -20,7 +18,6 @@ form {
 
 @media (max-width: 1170px) {
   .container {
-    background-image: url("../assets/container-celular.png");
     background-repeat: no-repeat;
   }
 
@@ -32,7 +29,7 @@ form {
 }
 
 .form-header .title h1 {
-  color: black;
+  color: white;
   font-size: 70px;
   font-weight: 900;
   text-align: center;
@@ -45,6 +42,7 @@ form {
   font-variant: all-small-caps;
   letter-spacing: 3.36px;
   text-align: center;
+  color: white;
 }
 
 /* Grupo de Inputs */
@@ -69,14 +67,14 @@ form {
 .input-box label {
   font-family: "Roboto", sans-serif;
   font-size: 13px;
-  color: #000000;
+  color: white;
   margin-bottom: 5px;
   font-weight: 400;
 }
 
 .input-box input {
   padding: 10px; /* Aumenta o padding para campos maiores */
-  background: rgba(50, 50, 50, 0.8);
+  background-color: rgba(228, 228, 228, 0.8);
   border: 1px solid #fff;
   color: rgba(255, 255, 255, 0.8); /* Ajusta a cor do texto nos campos */
   border: none;
@@ -90,8 +88,9 @@ form {
 }
 
 .input-box input:focus {
-  outline: 2px solid #4a5568;
-  box-shadow: 0 0 5px rgba(18, 18, 18, 0.3);
+  outline: 2px solid #c3c3c3;
+  background: rgba(228, 228, 228, 0.8);
+
 }
 
 .input-box a {
@@ -101,38 +100,25 @@ form {
   font-size: 12px;
 }
 
-.input-box.cnpj {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: -30px;
-}
+
 
 .input-box.cnpj label {
   font-family: "Roboto", sans-serif;
   font-size: 13px;
-  color: #000000;
+  color: white;
   margin-bottom: 5px;
   font-weight: 400;
 }
 
 .input-box.cnpj input {
   padding: 10px; /* Aumenta o padding para campos maiores */
-  background: rgba(50, 50, 50, 0.8);
+  background: rgba(228, 228, 228, 0.8);
   border: 1px solid #fff;
-  color: rgba(255, 255, 255, 0.8); /* Ajusta a cor do texto nos campos */
+  color: rgba(32, 32, 32, 0.8); /* Ajusta a cor do texto nos campos */
   border: none;
   border-radius: 3px;
   font-size: 18px; /* Aumenta o tamanho da fonte */
   width: 100%; /* Faz os inputs ocuparem a largura total */
-}
-
-.input-box.cnpj input::placeholder {
-  color: rgba(255, 255, 255, 0.5); /* Ajusta a cor do placeholder */
-}
-
-.input-box.cnpj input:focus {
-  outline: 2px solid #4a5568;
-  box-shadow: 0 0 5px rgba(18, 18, 18, 0.3);
 }
 
 .input-box.cnpj a {
@@ -154,13 +140,13 @@ form {
 .continue-button button {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
-  color: #333;
+
   margin-bottom: 5px;
   font-weight: 400;
   text-decoration: none;
 
-  background-color: rgba(50, 50, 50, 0.8);
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(50, 50, 50, 0.8);
+  background-color: rgba(228, 228, 228, 0.8);
   padding: 10px 40px;
   border: none;
   border-radius: 3px;
@@ -170,7 +156,7 @@ form {
 }
 
 .continue-button button:hover {
-  background-color: rgba(50, 50, 50, 0.949);
+  background-color: rgba(255, 255, 255, 0.949);
 }
 
 @media (max-width: 768px) {
