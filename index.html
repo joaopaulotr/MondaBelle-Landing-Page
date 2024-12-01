@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="style/home-page.css" />
     <link rel="stylesheet" href="style/slider.css" />
     <link rel="stylesheet" href="style/cadastro.css" />
+    <link rel="stylesheet" href="style/duvidas.css">
+    <link rel="stylesheet" href="style/header.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -465,13 +467,27 @@
 
     <!--------------------------------------------------------------------------------------------------------------------------------->
 
-      <div class="background-duvidas">
-        <div class="titulo-duvida">
-            <textarea name="" id="">
-              
-            </textarea>
+    <section class="duvidas-section">
+      <h2>Tem Alguma Dúvida?</h2>
+      <p>Nós respondemos tudo abaixo!</p>
+      <form class="duvidas-form">
+        <div class="input-group">
+          <div class="input-field">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="input-field">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+          </div>
         </div>
-      </div>
+        <div class="textarea-group">
+          <label for="duvida">Digite aqui sua dúvida:</label>
+          <textarea id="duvida" name="duvida" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="submit-button">Enviar</button>
+      </form>
+    </section>
 
     <!--------------------------------------------------------------------------------------------------------------------------------->
 
@@ -481,7 +497,7 @@
         <div id="footer_contacts">  
           <h3 class="footer-principal">Social</h3>
 
-        
+          <!-- fc_ficon, ig_ficon, wpp_ficon -->>
           <div id="footer_social_media">
             <a
               href="https://www.instagram.com/originaexclusive/"
