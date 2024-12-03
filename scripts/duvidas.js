@@ -22,22 +22,25 @@ if (buttonCadastro) {
     buttonCadastro.addEventListener('click', async (e) => {
     e.preventDefault(); // Evita o comportamento padrão do formulário
 
+    // Inicializar o EmailJS com seu User ID
+    emailjs.init('Kwae4FGW5y3tlmx5M');  
+
     let erro = 0;
 
     // Definições das RegExp e validação dos campos
     const validaLetra = /[^a-zA-ZÀ-ÖØ-öø-ÿ\s]/;
 
     // Pega os dados das dúvidas
-    let nome = document.querySelector('#nome');
-    let duvida = document.querySelector('#duvida');
-    let email = document.querySelector('#email');
+    let nome = document.querySelector('#nome-duvida');
+    let duvida = document.querySelector('#mensagem-duvida');
+    let email = document.querySelector('#email-duvida');
 
     // Validações dos campos
     if (nome.value.length <= 0 || !(validaLetra.test(nome))) {
-        errorInput(fantasia);
+        errorInput(nome);
         erro++;
     } else {
-        fantasia.parentNode.className = "input-field"
+        nome.parentNode.className = "input-field"
     }
 
     const emailValido = await validacaoEmail(email.value);
@@ -49,11 +52,16 @@ if (buttonCadastro) {
     }
 
     if (duvida.value.length <= 0) {
-        errorInput(duvida);
+        errorTextArea(duvida);
         erro++;
     } else {
-        duvida.parentNode.className = "input-field"
+        duvida.parentNode.className = "textarea-group"
     }
+
+
+    console.log(email.value);
+    console.log(nome.value);
+    console.log(duvida.value);
 
     // Se houver erros, não prosseguir
     if (erro > 0) {
@@ -61,27 +69,33 @@ if (buttonCadastro) {
     }
 
     // Se não houver erros, prosseguir com o cadastro
-    const payload = {
-        NOME: nome.value.trim(),
-        EMAIL: email.value.trim(),
-        DUVIDA: duvida.value.trim(),
-    };
+    const templateParams = {
+        nome: nome.value,
+        email: email.value,
+        duvida: duvida.value,
+      };
 
     nome.value = "";
     email.value = "";
     duvida.value = "";
 
     document.querySelector('.overlay-duvida').style.display = 'flex';
-    await createRow(payload);
+    emailjs.send('service_1y8dkaz', 'template_3y0ji5l', templateParams);
 
     });
 }
 });
 
-
-
-
 function errorInput(input) {
     const formItem = input.parentNode;  
     formItem.className = "input-field error";
-  }
+}
+
+function errorTextArea(input) {
+    const formItem = input.parentNode;  
+    formItem.className = "textarea-group error";
+}
+
+document.querySelector('.dialog_duvida_close').addEventListener('click', () => {
+    document.querySelector('.overlay-duvida').style.display = 'none';
+});

@@ -24,6 +24,10 @@
     />
 
     <script src="scripts/slider.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="scripts/duvidas.js" defer></script>
+
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -480,20 +484,30 @@
         <div class="input-gp">
           <div class="input-field">
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email-duvida" name="email" placeholder="Digite seu email" required>
           </div>
           <div class="input-field">
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
+            <input type="text" id="nome-duvida" name="nome" placeholder="Digite seu nome" required>
           </div>
         </div>
         <div class="textarea-group">
           <label for="duvida">Digite aqui sua dúvida:</label>
-          <textarea id="duvida" name="duvida" rows="5" required></textarea>
+          <textarea id="mensagem-duvida" name="duvida" rows="5" placeholder="Escreva a sua dúvida" required></textarea>
         </div>
         <button type="submit" class="submit-button" id="enviar-duvida">Enviar</button>
       </form>
-    </section>
+
+    <div class="overlay-duvida">
+      <dialog id="dialog_enviado">
+        <p id="dialog_enviado_p">Obrigado por se cadastrar! <br>
+          Entraremos em contato em breve.</p>
+        <button class="dialog_duvida_close">
+          <p id="dialog_duvida_close_p">Fechar</p>
+        </button>
+      </dialog>
+    </div>
+  </section>
 
     <!--------------------------------------------------------------------------------------------------------------------------------->
 
