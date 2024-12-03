@@ -385,16 +385,16 @@ h6 {
   z-index: 9;
   outline: 0px;
   display: flex;
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   bottom: 40px;
   align-items: center;
   justify-content: center;
 }
 
 #btn-whatsapp img {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   transition: opacity 0.4s ease;
 }
 
@@ -948,7 +948,8 @@ footer {
 .img-revend{
 
   width: 50%; 
-  height: 400PX;
+  height: 400px;
+  margin-bottom: 30px;
 }
 
 /*REVENDEDORES CSS */
