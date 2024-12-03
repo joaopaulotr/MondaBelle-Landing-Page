@@ -38,10 +38,21 @@
         <div class="logo">
           <!--mudar a cor da logo para mais escuro (testar)-->
           <h1 class="origina">
+            <a href="#"
+              ><img
+                class="logo-nav"
+                src="assets/duv_freq_nav.svg"
+                alt=""
+            /></a>
+          </h1>
+        </div>
+        <div class="logo">
+          <!--mudar a cor da logo para mais escuro (testar)-->
+          <h1 class="origina">
             <a href="index.html"
               ><img
                 class="logo-nav"
-                src="assets/logo_extended_white.png"
+                src="assets/logo_nav.png"
                 alt=""
             /></a>
           </h1>
@@ -49,28 +60,23 @@
         <div class="nav-list">
           <ul>
             <li class="nav-item">
-              <a href="historia.html" class="nav-link" id="historia-list"
-                >HISTORIA</a
+              <a href="#" class="nav-link" id="historia-list"
+                ><img src="assets/pergunta_nav.png" alt="perguntar"></a
               >
             </li>
             <li class="nav-item">
-              <a href="editoriais.html" class="nav-link" id="editoriais-list"
-                >EDITORIAIS</a
+              <a href="#" class="nav-link" id="editoriais-list"
+                ><img src="assets/add_user_nav.svg" alt="adicionar usuário"></a
               >
             </li>
             <li class="nav-item">
-              <a href="fale-conosco.html" class="nav-link" id="faleconosco-list"
-                >CONTATO</a
+              <a href="#" class="nav-link" id="faleconosco-list"
+                ><img src="assets/add_cart_nav.svg" alt="adicionar ao carrinho"></a
               >
             </li>
             <li class="nav-item">
-              <a href="ogrupo.html" class="nav-link" id="ogrupo-list"
-                >O GRUPO</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="conceito.html" class="nav-link" id="conceito-list"
-                >CONCEITO</a
+              <a href="#" class="nav-link" id="ogrupo-list"
+                ><img src="assets/menu_nav.png" alt="menu"></a
               >
             </li>
           </ul>
@@ -471,7 +477,7 @@
       <h2>Tem Alguma Dúvida?</h2>
       <p>Nós respondemos tudo abaixo!</p>
       <form class="duvidas-form">
-        <div class="input-group">
+        <div class="input-gp">
           <div class="input-field">
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
@@ -485,7 +491,7 @@
           <label for="duvida">Digite aqui sua dúvida:</label>
           <textarea id="duvida" name="duvida" rows="5" required></textarea>
         </div>
-        <button type="submit" class="submit-button">Enviar</button>
+        <button type="submit" class="submit-button" id="enviar-duvida">Enviar</button>
       </form>
     </section>
 
