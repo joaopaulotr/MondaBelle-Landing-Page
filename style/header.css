@@ -45,16 +45,18 @@ header.rolagem .nav-item :hover {
 
 .nav-bar {
   display: flex;
-  justify-content: space-between;
   padding: 1.5rem 4rem;
   align-items: center;
   width: 100%;
+  justify-content: space-between;
 }
+
+
 
 .logo h1 a {
   text-decoration: none;
   display: flex;
-  align-items: center;
+
   text-decoration: none;
   width: 192.732px;
   height: 28px;
@@ -78,6 +80,7 @@ header.rolagem .nav-item :hover {
   font-size: medium;
 }
 
+
 .nav-list {
   display: flex;
   align-items: space-between;
@@ -91,7 +94,7 @@ header.rolagem .nav-item :hover {
 
 .nav-item {
   display: block;
-  margin: 0 65px;
+  margin: 0 10px ;
   align-items: center;
 }
 
@@ -105,7 +108,8 @@ header.rolagem .nav-item :hover {
   transition: color 0.2s ease;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
-  width: 13rem;
+  width: auto;
+  
   height: 28px;
   flex-shrink: 0;
   color: rgba(255, 255, 255, 0.6);
@@ -116,6 +120,8 @@ header.rolagem .nav-item :hover {
   font-variant: all-small-caps;
   letter-spacing: 3.36px;
 }
+
+
 
 .mobile-menu-icon {
   display: none;
@@ -128,19 +134,19 @@ header.rolagem .nav-item :hover {
 
 @media screen and (max-width: 1596px) {
   .nav-item {
-    margin: 0 45px;
+    margin: 0 10px;
   }
 }
 
 @media screen and (max-width: 1380px) {
   .nav-item {
-    margin: 0 35px;
+    margin: 0 1px;
   }
 }
 
 @media screen and (max-width: 1279px) {
   .nav-item {
-    margin: 0 25px;
+    margin: 0 1px;
   }
 }
 
@@ -258,4 +264,12 @@ h6 {
 .text-content {
   width: 200px;
   height: 80px;
+}
+
+.duvidasfreq a{
+  font-weight: 300;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+
 }
