@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="style/home-page.css" />
     <link rel="stylesheet" href="style/slider.css" />
     <link rel="stylesheet" href="style/cadastro.css" />
-    <link rel="stylesheet" href="style/duvidas.css">
-    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/duvidas.css" />
+    <link rel="stylesheet" href="style/header.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -27,8 +27,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="scripts/duvidas.js" defer></script>
 
-
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -39,20 +37,22 @@
   <body>
     <header id="header">
       <nav class="nav-bar">
-        <div class="duvidasfreq" style="justify-content: center;">
-       <P><a href="#"> DÚVIDAS FREQUENTES</a><img src="assets/mais.png" alt="" style="width: 20px; position: relative; top: 2px;"></P>
-       
+        <div class="duvidasfreq" style="justify-content: center">
+          <p>
+            <a href="faq.html"> DÚVIDAS FREQUENTES</a
+            ><img
+              src="assets/mais.png"
+              alt=""
+              style="width: 20px; position: relative; top: 2px"
+            />
+          </p>
         </div>
 
         <div class="logo">
           <!--mudar a cor da logo para mais escuro (testar)-->
           <h1 class="mondabelle">
-            <a href="index.html" 
-              ><img
-                class="logo-nav"
-                src="assets/logo_nav.png"
-                alt=""
-                
+            <a href="index.html"
+              ><img class="logo-nav" src="assets/logo_nav.png" alt=""
             /></a>
           </h1>
         </div>
@@ -60,19 +60,21 @@
           <ul>
             <li class="nav-item">
               <a href="#" class="nav-link" id="historia-list"
-                ><img src="assets/pergunta.png" alt="perguntar"></a
-              >
+                ><img src="assets/pergunta.png" alt="perguntar"
+              /></a>
             </li>
 
             <li class="nav-item">
               <a href="#" class="nav-link" id="faleconosco-list"
-                ><img src="assets/sacola-de-compras.png" alt="adicionar ao carrinho"></a
-              >
+                ><img
+                  src="assets/sacola-de-compras.png"
+                  alt="adicionar ao carrinho"
+              /></a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link" id="ogrupo-list"
-                ><img src="assets/menu-aberto.png" alt="menu"></a
-              >
+                ><img src="assets/menu-aberto.png" alt="menu"
+              /></a>
             </li>
           </ul>
         </div>
@@ -115,9 +117,9 @@
       </div>
     </header>
 
-  <video class="video-background" autoplay muted loop>
-    <source src="assets/MAKING OF .mp4" type="video/mp4">
-  </video>
+    <video class="video-background" autoplay muted loop>
+      <source src="assets/MAKING OF .mp4" type="video/mp4" />
+    </video>
 
     <section class="banner-celular"></section>
 
@@ -125,7 +127,7 @@
     <script type="module" src="scripts/cadastracliente.js" defer></script>
     <script src="scripts/homescript.js" defer></script>
 
-     <!--------------------------------------------------------------------------------------------------------------------------------->
+    <!--------------------------------------------------------------------------------------------------------------------------------->
 
     <div class="grid-one-content">
       <section id="grid1" class="3elipse">
@@ -150,7 +152,9 @@
             />
             <div class="text-content">
               <h3>Materiais de apoio</h3>
-              <p>Produzimos materiais especiais e exclusivos para você, lojista.</p>
+              <p>
+                Produzimos materiais especiais e exclusivos para você, lojista.
+              </p>
             </div>
           </article>
           <article class="article">
@@ -168,7 +172,7 @@
       </section>
     </div>
 
-     <!--------------------------------------------------------------------------------------------------------------------------------->
+    <!--------------------------------------------------------------------------------------------------------------------------------->
 
     <section id="cadastro">
       <div class="container">
@@ -184,7 +188,14 @@
             <div class="input-group">
               <div class="input-box cnpj">
                 <label for="CNPJ">*CNPJ:</label>
-                <input id="CNPJ" type="text" name="CNPJ" required minlength="18" maxlength="18"/>
+                <input
+                  id="CNPJ"
+                  type="text"
+                  name="CNPJ"
+                  required
+                  minlength="18"
+                  maxlength="18"
+                />
                 <a class="cnpj_incorreto">CNPJ inválido!</a>
                 <a class="cnpj_existente">CNPJ já cadastrado!</a>
               </div>
@@ -231,7 +242,7 @@
               </div>
               <div class="input-box">
                 <label for="email">*Email:</label>
-                <input id="email" type="email" name="email" required/>
+                <input id="email" type="email" name="email" required />
                 <a>E-mail inválido!</a>
               </div>
             </div>
@@ -245,8 +256,10 @@
 
       <div class="overlay-enviado">
         <dialog id="dialog_enviado">
-          <p id="dialog_enviado_p">Obrigado por se cadastrar! <br>
-            Entraremos em contato em breve.</p>
+          <p id="dialog_enviado_p">
+            Obrigado por se cadastrar! <br />
+            Entraremos em contato em breve.
+          </p>
           <button class="dialog_close"><p>Fechar</p></button>
         </dialog>
       </div>
@@ -310,20 +323,44 @@
         <!-- MUDAR IMAGENS DO CARROSSEL -->
 
         <div class="slide-box primeiro">
-          <img class="img-desktop" src="assets/fashion_designer_desk.svg" alt="slide 1" />
+          <img
+            class="img-desktop"
+            src="assets/fashion_designer_desk.svg"
+            alt="slide 1"
+          />
           <!-- imagem desktop -->
-          <img class="img-mobile" src="assets/fashion_designer_mob.svg" alt="slide 1" />
+          <img
+            class="img-mobile"
+            src="assets/fashion_designer_mob.svg"
+            alt="slide 1"
+          />
           <!-- imagem mobile -->
         </div>
 
         <div class="slide-box">
-          <img class="img-desktop" src="assets/representante_designer_desk.svg" alt="slide 2" />
-          <img class="img-mobile" src="assets/representante_designer_mob.svg" alt="slide 2" />
+          <img
+            class="img-desktop"
+            src="assets/representante_designer_desk.svg"
+            alt="slide 2"
+          />
+          <img
+            class="img-mobile"
+            src="assets/representante_designer_mob.svg"
+            alt="slide 2"
+          />
         </div>
 
         <div class="slide-box">
-          <img class="img-desktop" src="assets/diretoras_designer_desk.svg" alt="slide 3" />
-          <img class="img-mobile" src="assets/diretoras_designer_mob.svg" alt="slide 3" />
+          <img
+            class="img-desktop"
+            src="assets/diretoras_designer_desk.svg"
+            alt="slide 3"
+          />
+          <img
+            class="img-mobile"
+            src="assets/diretoras_designer_mob.svg"
+            alt="slide 3"
+          />
         </div>
 
         <div class="nav-auto">
@@ -339,7 +376,7 @@
         </div>
       </div>
     </section>
-   
+
     <!--------------------------------------------------------------------------------------------------------------------------------->
 
     <section class="fundadoras">
@@ -377,9 +414,9 @@
       </div>
     </section>
 
-    <!---------------------------------------------------------------------------------------------------------------------------------> 
+    <!--------------------------------------------------------------------------------------------------------------------------------->
 
-    <div class="grid-one-content" style="background-color: white;">
+    <div class="grid-one-content" style="background-color: white">
       <section id="grid1" class="3elipse">
         <div class="grid1-content">
           <article class="article">
@@ -418,7 +455,7 @@
           </article>
         </div>
       </section>
-    </div>   
+    </div>
 
     <!--------------------------------------------------------------------------------------------------------------------------------->
     <section>
@@ -429,29 +466,29 @@
         </div>
         <div class="grid-qu">
           <div class="foto">
-            <img src="assets/itemsmall1.png" alt="" class="item-image">
+            <img src="assets/itemsmall1.png" alt="" class="item-image" />
             <h6>Ana Castela</h6>
-            <P style="font-size: 12px;">@anacastela</P>
+            <p style="font-size: 12px">@anacastela</p>
           </div>
           <div class="foto">
-            <img src="assets/itemsmall1.png" alt="" class="item-image">
+            <img src="assets/itemsmall1.png" alt="" class="item-image" />
             <h6>Ana Castela</h6>
-            <P style="font-size: 12px;">@anacastela</P>
+            <p style="font-size: 12px">@anacastela</p>
           </div>
           <div class="foto">
-            <img src="assets/itemsmall1.png" alt="" class="item-image">
+            <img src="assets/itemsmall1.png" alt="" class="item-image" />
             <h6>Ana Castela</h6>
-            <P style="font-size: 12px;">@anacastela</P>
+            <p style="font-size: 12px">@anacastela</p>
           </div>
           <div class="foto">
-            <img src="assets/itemsmall1.png" alt="" class="item-image">
+            <img src="assets/itemsmall1.png" alt="" class="item-image" />
             <h6>Ana Castela</h6>
-            <P style="font-size: 12px;">@anacastela</P>
+            <p style="font-size: 12px">@anacastela</p>
           </div>
         </div>
       </div>
     </section>
-    
+
     <!--------------------------------------------------------------------------------------------------------------------------------->
 
     <section>
@@ -460,53 +497,80 @@
           <h2>nossos revendedores</h2>
           <p>mais de x revendedores pelo brasil e pelo mundo</p>
           <div class="img-revend-div">
-          <img class="img-revend" src="assets/mondaBelle-novapoint.jpg" alt="">
-        </div>
+            <img
+              class="img-revend"
+              src="assets/mondaBelle-novapoint.jpg"
+              alt=""
+            />
+          </div>
         </div>
       </div>
-</section>
+    </section>
 
     <!--------------------------------------------------------------------------------------------------------------------------------->
 
     <section class="duvidas-section">
       <div class="titulo">
-      <h2>Tem Alguma Dúvida?</h2>
-      <p>Nós respondemos tudo abaixo!</p></div>
+        <h2>Tem Alguma Dúvida?</h2>
+        <p>Nós respondemos tudo abaixo!</p>
+      </div>
       <form class="duvidas-form">
         <div class="input-gp">
           <div class="input-field">
             <label for="email">Email:</label>
-            <input type="email" id="email-duvida" name="email" placeholder="Digite seu email" required>
+            <input
+              type="email"
+              id="email-duvida"
+              name="email"
+              placeholder="Digite seu email"
+              required
+            />
           </div>
           <div class="input-field">
             <label for="nome">Nome:</label>
-            <input type="text" id="nome-duvida" name="nome" placeholder="Digite seu nome" required>
+            <input
+              type="text"
+              id="nome-duvida"
+              name="nome"
+              placeholder="Digite seu nome"
+              required
+            />
           </div>
         </div>
         <div class="textarea-group">
           <label for="duvida">Digite aqui sua dúvida:</label>
-          <textarea id="mensagem-duvida" name="duvida" rows="5" placeholder="Escreva a sua dúvida" required></textarea>
+          <textarea
+            id="mensagem-duvida"
+            name="duvida"
+            rows="5"
+            placeholder="Escreva a sua dúvida"
+            required
+          ></textarea>
         </div>
-        <button type="submit" class="submit-button" id="enviar-duvida">Enviar</button>
+        <button type="submit" class="submit-button" id="enviar-duvida">
+          Enviar
+        </button>
       </form>
 
-    <div class="overlay-duvida">
-      <dialog id="dialog_enviado">
-        <p id="dialog_enviado_p">Obrigado por se cadastrar! <br>
-          Entraremos em contato em breve.</p>
-        <button class="dialog_duvida_close">
-          <p id="dialog_duvida_close_p">Fechar</p>
-        </button>
-      </dialog>
-    </div>
-  </section>
+      <div class="overlay-duvida">
+        <dialog id="dialog_enviado">
+          <p id="dialog_enviado_p">
+            Obrigado por se cadastrar! <br />
+            Entraremos em contato em breve.
+          </p>
+          <button class="dialog_duvida_close">
+            <p id="dialog_duvida_close_p">Fechar</p>
+          </button>
+        </dialog>
+      </div>
+    </section>
 
     <!--------------------------------------------------------------------------------------------------------------------------------->
 
     <main></main>
-    <footer  style="padding-left: 0px !important;">
+    <footer style="padding-left: 0px !important">
       <div id="footer_content">
-        <div id="footer_contacts">  
+        <div id="footer_contacts">
           <h3 class="footer-principal">Social</h3>
 
           <!-- fc_ficon, ig_ficon, wpp_ficon -->
@@ -514,23 +578,21 @@
             <a
               href="https://www.instagram.com/originaexclusive/"
               class="footer-link"
-              id="instagram"
               target="_blank"
             >
-              <i class="fa-brands fa-instagram"></i>
+              <img id="instagram" src="assets/ig_ficon.svg" alt="" />
             </a>
 
             <a href="#" class="footer-link" target="_blank">
-              <img id="facebook" src="assets/fc_ficon.svg" alt="">
+              <img id="facebook" src="assets/fc_ficon.svg" alt="" />
             </a>
 
             <a
               href="https://api.whatsapp.com/send?phone=554497595987"
               class="footer-link"
-              id="whatsapp"
               target="_blank"
             >
-              <i class="fa-brands fa-whatsapp"></i>
+              <img id="whatsapp" src="assets/wpp_ficon.svg" alt="" />
             </a>
           </div>
         </div>
@@ -570,21 +632,27 @@
             <a href="editoriais.html" class="footer-link">Originá</a>
           </li>
         </ul>
-        
-
       </div>
 
-      <div style="display: flex; justify-content: center; align-items: center; width: 100%; padding-top: 65px; padding-bottom: 20px;">   
-        <img src="assets/logo_nav.png" alt=""> 
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          padding-top: 65px;
+          padding-bottom: 20px;
+        "
+      >
+        <img src="assets/logo_nav.png" alt="" />
       </div>
-      <hr style="z-index: 999;">
+      <hr style="z-index: 999" />
       <div id="footer_copyright">
         Copyright © 2024 - Grupo MB - CNPJ: 43.573.412/0001-23
       </div>
     </footer>
 
     <!--------------------------------------------------------------------------------------------------------------------------------->
-
 
     <a
       id="btn-whatsapp"
@@ -604,7 +672,5 @@
     </a>
 
     <!--------------------------------------------------------------------------------------------------------------------------------->
-
-
   </body>
 </html>

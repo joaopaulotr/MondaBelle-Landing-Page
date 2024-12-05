@@ -22,7 +22,6 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  
 }
 header.rolagem {
   background-color: white;
@@ -51,8 +50,6 @@ header.rolagem .nav-item :hover {
   justify-content: space-between;
 }
 
-
-
 .logo h1 a {
   text-decoration: none;
   display: flex;
@@ -80,7 +77,6 @@ header.rolagem .nav-item :hover {
   font-size: medium;
 }
 
-
 .nav-list {
   display: flex;
   align-items: space-between;
@@ -94,7 +90,7 @@ header.rolagem .nav-item :hover {
 
 .nav-item {
   display: block;
-  margin: 0 10px ;
+  margin: 0 10px;
   align-items: center;
 }
 
@@ -109,7 +105,7 @@ header.rolagem .nav-item :hover {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   width: auto;
-  
+
   height: 28px;
   flex-shrink: 0;
   color: rgba(255, 255, 255, 0.6);
@@ -120,8 +116,6 @@ header.rolagem .nav-item :hover {
   font-variant: all-small-caps;
   letter-spacing: 3.36px;
 }
-
-
 
 .mobile-menu-icon {
   display: none;
@@ -266,10 +260,14 @@ h6 {
   height: 80px;
 }
 
-.duvidasfreq a{
+.duvidasfreq a {
   font-weight: 300;
   color: white;
   font-size: 18px;
   text-decoration: none;
+}
 
+.faqh {
+  background-color: #565353;
+  position: absolute;
 }

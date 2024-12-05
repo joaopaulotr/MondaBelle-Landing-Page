@@ -1,5 +1,3 @@
-
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -609,16 +607,13 @@ body {
 .team-section {
   display: grid;
   grid-template-columns: repeat(5, 1fr); /* Padrão para desktop */
-  grid-template-columns: 150px 150px 150px 150px 150px; 
+  grid-template-columns: 150px 150px 150px 150px 150px;
   gap: 20px; /* Reduzido o espaçamento entre os cards */
   padding: 20px;
   max-width: 1000px; /* Largura máxima reduzida */
   margin: 0 auto;
   justify-content: center;
 }
-
-
-
 
 .member-card {
   background-color: white;
@@ -673,7 +668,6 @@ body {
   }
 }
 
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -710,6 +704,7 @@ footer {
   font-size: 16px;
   font-weight: 300;
   text-decoration: none;
+  width: 10px;
 }
 
 #footer_content {
@@ -741,7 +736,7 @@ footer {
 }
 
 @media screen and (max-width: 426px) {
-  #footer_social_media .footer-link{
+  #footer_social_media .footer-link {
     padding-top: 0.1rem;
   }
 }
@@ -755,15 +750,18 @@ footer {
 }
 
 #instagram {
-  background-color: #565353;
+  width: 30px;
+  height: 30px;
 }
 
 #facebook {
-  background-color: #565353;
+  width: 30px;
+  height: 30px;
 }
 
 #whatsapp {
-  background-color: #565353;
+  width: 30px;
+  height: 30px;
 }
 
 .footer-list {
@@ -874,9 +872,9 @@ footer {
 }
 
 .article img {
-  width: 50px; 
+  width: 50px;
   height: 50px;
-  margin-bottom: 5px; 
+  margin-bottom: 5px;
 }
 
 /*REDES SOCIAIS CSS */
@@ -900,8 +898,6 @@ footer {
   margin-bottom: 20px;
 }
 
-
-
 .grid-qu {
   display: flex;
   align-items: flex-start;
@@ -914,8 +910,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  text-align: left; 
-  width: 200px; 
+  text-align: left;
+  width: 200px;
 }
 
 .foto img {
@@ -931,27 +927,28 @@ footer {
 }
 /*GRID FAMOSAS CSS */
 
-
 /*REVENDEDORES CSS */
 
-
-.background-revend{
+.background-revend {
   padding: 20px;
   background-color: white;
 }
 
-.img-revend-div{
+.img-revend-div {
   padding-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.img-revend{
-
-  width: 50%; 
+.img-revend {
+  width: 50%;
   height: 400px;
   margin-bottom: 30px;
+}
+
+.blank {
+  height: 50rem;
 }
 
 /*REVENDEDORES CSS */

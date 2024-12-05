@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dúvidas Frequentes</title>
+
+    <link
+      rel="shortcut icon"
+      href="assets/origina_icon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style/home-page.css" />
+    <link rel="stylesheet" href="style/slider.css" />
+    <link rel="stylesheet" href="style/cadastro.css" />
+    <link rel="stylesheet" href="style/duvidas.css" />
+    <link rel="stylesheet" href="style/header.css" />
+    <link rel="stylesheet" href="style/ogrupo.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script src="scripts/slider.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="scripts/duvidas.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="faqh" id="header">
+      <nav class="nav-bar">
+        <div class="duvidasfreq" style="justify-content: center">
+          <p>
+            <a href="#"> DÚVIDAS FREQUENTES</a
+            ><img
+              src="assets/mais.png"
+              alt=""
+              style="width: 20px; position: relative; top: 2px"
+            />
+          </p>
+        </div>
+
+        <div class="logo">
+          <!--mudar a cor da logo para mais escuro (testar)-->
+          <h1 class="mondabelle">
+            <a href="index.html"
+              ><img class="logo-nav" src="assets/logo_nav.png" alt=""
+            /></a>
+          </h1>
+        </div>
+        <div class="nav-list">
+          <ul>
+            <li class="nav-item">
+              <a href="#" class="nav-link" id="historia-list"
+                ><img src="assets/pergunta.png" alt="perguntar"
+              /></a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link" id="faleconosco-list"
+                ><img
+                  src="assets/sacola-de-compras.png"
+                  alt="adicionar ao carrinho"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" id="ogrupo-list"
+                ><img src="assets/menu-aberto.png" alt="menu"
+              /></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mobile-menu-icon">
+          <button onclick="menuShow()">
+            <img class="iconm" src="assets/menu_white_36dp.svg" alt="" />
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <body>
+        
+
+    <!--------------------------------------------------------------------------------------------------------------------------------->
+    <section class="blank"></section>
+    <section class="blank">
+        <hr class="linha-separadora">
+    </section>
+
+    <!--------------------------------------------------------------------------------------------------------------------------------->
+
+    <main></main>
+    <footer style="padding-left: 0px !important">
+      <div id="footer_content">
+        <div id="footer_contacts">
+          <h3 class="footer-principal">Social</h3>
+
+          <!-- fc_ficon, ig_ficon, wpp_ficon -->
+          <div id="footer_social_media">
+            <a
+              href="https://www.instagram.com/originaexclusive/"
+              class="footer-link"
+              target="_blank"
+            >
+              <img id="instagram" src="assets/ig_ficon.svg" alt="" />
+            </a>
+
+            <a href="#" class="footer-link" target="_blank">
+              <img id="facebook" src="assets/fc_ficon.svg" alt="" />
+            </a>
+
+            <a
+              href="https://api.whatsapp.com/send?phone=554497595987"
+              class="footer-link"
+              target="_blank"
+            >
+              <img id="whatsapp" src="assets/wpp_ficon.svg" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <ul class="footer-list">
+          <li>
+            <h3 class="footer-principal">Podemos te ajudar?</h3>
+          </li>
+          <li>
+            <a href="historia.html" class="footer-link">Nos Contate</a>
+          </li>
+          <li>
+            <a href="ogrupo.html" class="footer-link">FAQ's</a>
+          </li>
+          <li>
+            <a href="conceito.html" class="footer-link">Trabalhe Conosco</a>
+          </li>
+        </ul>
+
+        <ul class="footer-list">
+          <li>
+            <h3 class="footer-principal">Compre MB</h3>
+          </li>
+          <li>
+            <a href="editoriais.html" class="footer-link">Site Mondabelle</a>
+          </li>
+        </ul>
+
+        <ul class="footer-list">
+          <li>
+            <h3 class="footer-principal">Compre MB</h3>
+          </li>
+          <li>
+            <a href="editoriais.html" class="footer-link">MondaBelle</a>
+          </li>
+          <li>
+            <a href="editoriais.html" class="footer-link">Originá</a>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          padding-top: 65px;
+          padding-bottom: 20px;
+        "
+      >
+        <img src="assets/logo_nav.png" alt="" />
+      </div>
+      <hr style="z-index: 999" />
+      <div id="footer_copyright">
+        Copyright © 2024 - Grupo MB - CNPJ: 43.573.412/0001-23
+      </div>
+    </footer>
+
+    <!--------------------------------------------------------------------------------------------------------------------------------->
+  </body>
+</html>

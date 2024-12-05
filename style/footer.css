@@ -65,7 +65,7 @@ footer {
 }
 
 @media screen and (max-width: 426px) {
-  #footer_social_media .footer-link{
+  #footer_social_media .footer-link {
     padding-top: 0.1rem;
   }
 }
@@ -83,7 +83,7 @@ footer {
 }
 
 #facebook {
-  width: 5px;
+  background-color: #565353;
 }
 
 #whatsapp {
