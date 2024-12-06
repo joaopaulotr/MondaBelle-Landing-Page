@@ -78,13 +78,25 @@ window.addEventListener("scroll", function () {
 });
 
 function changeLogoOnScroll() {
-  const headerLogo = document.querySelector(".origina img");
+  const headerLogo = document.getElementById("logo-nav-mb");
   const scrollPosition = window.scrollY;
+  const icon1 = document.getElementById("faqs");
+  const icon2 = document.getElementById("sitemb");
+  const icon3 = document.getElementById("menu-icon");
+
 
   if (scrollPosition > 525) {
-    headerLogo.src = "assets/logo_extended_black.png";
+    headerLogo.classList.add("desativalogo");
+    headerLogo.src = "assets/logo-preta-alta.png";
+    icon1.src = "assets/perguntando (2).png";
+    icon2.src = "assets/sacola-de-compras (1).png";
+    icon3.src = "assets/menu-aberto (1).png"
   } else {
-    headerLogo.src = "assets/logo_extended_white.png";
+    headerLogo.classList.remove("desativalogo");
+    headerLogo.src = "assets/Novo Projeto (1).png";
+    icon1.src = "assets/perguntando (1).png";
+    icon2.src = "assets/sacola-de-compras.png";
+    icon3.src = "assets/menu-aberto.png"
   }
 }
 

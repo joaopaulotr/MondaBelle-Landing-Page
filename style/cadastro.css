@@ -149,7 +149,7 @@ form {
   background-color: rgba(228, 228, 228, 0.8);
   padding: 10px 40px;
   border: none;
-  border-radius: 3px;
+  border-radius: 1px;
   cursor: pointer;
   transition: background-color 0.4s ease;
   text-decoration: none;
