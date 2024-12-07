@@ -178,7 +178,8 @@ body {
   border: none;
   border-top: 2px solid rgba(0, 0, 0, 0.4); /* Altere a cor conforme necessário */
   width: 80%; /* Ajusta a largura da linha */
-  margin: 20px auto; /* Centraliza a linha e define margens */
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 #fundadora-img1 {
