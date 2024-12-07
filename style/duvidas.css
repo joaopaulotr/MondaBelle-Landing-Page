@@ -111,3 +111,9 @@
     padding: 8px;
   }
 }
+
+.cinza {
+  padding-left: 20rem;
+  margin-left: 20px auto;
+  color: #555;
+}
