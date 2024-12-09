@@ -947,11 +947,12 @@ footer {
 }
 
 .blank {
-  height: 50rem;
+  height: 20rem;
 }
 
 /*REVENDEDORES CSS */
 
+/*CSS DO NOVO MENU*/
 .container_btt {
   position: relative;
 }
@@ -988,6 +989,10 @@ footer {
   background: none;
   border: none;
   cursor: pointer;
-  
+  font-size: 25px;
 }
 
+textarea::placeholder {
+  font-family: 'Roboto', sans-serif; 
+  font-size: 14px; 
+}
