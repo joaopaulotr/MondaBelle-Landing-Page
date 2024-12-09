@@ -143,7 +143,7 @@ window.addEventListener('scroll', function() {
   // Se o footer está visível na tela, reposiciona o botão
   if (footerRect.top <= windowHeight) {
     // Ajusta a posição do botão para não sobrepor o footer
-    floatButton.style.bottom = (windowHeight - footerRect.top + 60) + 'px';
+    floatButton.style.bottom = (windowHeight - footerRect.top + 40) + 'px';
   } else {
     // Reseta o botão para a posição original quando o footer não está visível
     floatButton.style.bottom = '40px';
@@ -190,3 +190,21 @@ const items = document.querySelectorAll('.item img');
       }, 300);
     });
   });
+
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const menuButton = document.querySelector(".menu-button_nav");
+    const menuNav = document.querySelector(".menu_nav");
+    const closeButton = document.querySelector(".close-button_nav");
+  
+    // Abrir o menu lateral
+    menuButton.addEventListener("click", () => {
+      menuNav.style.transform = "translateX(0)";
+    });
+  
+    // Fechar o menu lateral
+    closeButton.addEventListener("click", () => {
+      menuNav.style.transform = "translateX(100%)";
+    });
+  });
+  

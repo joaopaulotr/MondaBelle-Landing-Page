@@ -951,3 +951,41 @@ footer {
 }
 
 /*REVENDEDORES CSS */
+
+.container_btt {
+  position: relative;
+}
+
+.menu_nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: #f3f3f3;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  z-index: 999;
+  padding: 20px;
+}
+
+.menu_nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu_nav li {
+  margin: 10px 0;
+}
+
+.menu_nav .close-button_nav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  
+}
