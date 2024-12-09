@@ -21,7 +21,7 @@ header {
 }
 
 .logo-nav {
-  width: 140px;
+  width: 180px;
   height: auto;
 }
 
@@ -883,7 +883,7 @@ footer {
 .background-usa {
   padding: 50px;
   text-align: center;
-  background-color: #D9D9D9;
+  background-color: #f5f5f5;
 }
 
 .titulo h2 {
@@ -954,7 +954,15 @@ footer {
 
 /*CSS DO NOVO MENU*/
 .container_btt {
-  position: relative;
+
+    position: absolute; /* Sai do fluxo normal */
+    top: 0; /* Ajuste conforme necessário */
+    right: 0; /* Ajuste conforme necessário */
+    width: auto; /* Impede que ocupe largura total */
+    height: auto; /* Impede que ocupe altura adicional */
+    z-index: 10; /* Mantém visível quando necessário */
+  
+  
 }
 
 .menu_nav {

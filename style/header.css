@@ -14,22 +14,22 @@
 .logo-nav {
   position: absolute;
   top: 50%;
-  left: 26%;
-  width: 800px;
+  left: 22.5%;
+  width: 900px;
   height: auto;
   transform: scale(1); 
-  transition: transform 1s ease;
+  transition: transform 0.3s ease;
 }
 
 
 .desativalogo {
   position: relative; 
-  width: 140px;
+  width: 180px;
   top: 0;
   left: 30px;
   margin-right: 100px;
   transform: scale(0.9); /* Reduz o tamanho da logo */
-  transition: transform 1s ease; /* Suaviza a transição */
+  transition: transform 0.3s ease; /* Suaviza a transição */
 }
 
 header {
@@ -97,6 +97,7 @@ header.rolagem .nav-item :hover {
 .nav-list {
   display: flex;
   align-items: space-between;
+  justify-content: end;
 }
 
 .nav-list ul {
@@ -291,4 +292,9 @@ h6 {
 .faqh {
   background-color: #565353;
   position: absolute;
+}
+
+button {
+  all: unset;
+  
 }

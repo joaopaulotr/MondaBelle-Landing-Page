@@ -83,20 +83,26 @@ function changeLogoOnScroll() {
   const icon1 = document.getElementById("faqs");
   const icon2 = document.getElementById("sitemb");
   const icon3 = document.getElementById("menu-icon");
+  const icon4 = document.getElementById("plus");
+
 
 
   if (scrollPosition > 525) {
     headerLogo.classList.add("desativalogo");
-    headerLogo.src = "assets/logo-preta-alta.png";
+    headerLogo.src = "assets/logo preta png copiar.png";
     icon1.src = "assets/perguntando (2).png";
     icon2.src = "assets/sacola-de-compras (1).png";
-    icon3.src = "assets/menu-aberto (1).png"
+    icon3.src = "assets/menu-aberto (1).png";
+    icon4.src = "assets/mais (1).png";
+
   } else {
     headerLogo.classList.remove("desativalogo");
     headerLogo.src = "assets/Novo Projeto (1).png";
     icon1.src = "assets/perguntando (1).png";
     icon2.src = "assets/sacola-de-compras.png";
-    icon3.src = "assets/menu-aberto.png"
+    icon3.src = "assets/menu-aberto.png";
+    icon4.src = "assets/mais.png";
+
   }
 }
 
