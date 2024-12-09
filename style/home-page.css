@@ -929,7 +929,7 @@ footer {
 /*REVENDEDORES CSS */
 
 .background-revend {
-  padding: 20px;
+  padding: 50px;
   background-color: white;
 }
 
@@ -1003,4 +1003,13 @@ footer {
 textarea::placeholder {
   font-family: 'Roboto', sans-serif; 
   font-size: 14px; 
+}
+
+a {
+list-style: none; 
+text-decoration: none;
+}
+
+a:visited {
+  color: inherit; 
 }
