@@ -902,7 +902,7 @@ footer {
   align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 55px;
+  gap: 90px;
 }
 
 .foto {
@@ -914,8 +914,8 @@ footer {
 }
 
 .foto img {
-  width: 250px;
-  height: 400px;
+  width: 280px;
+  height: 450px;
   object-fit: cover;
 }
 
@@ -955,15 +955,16 @@ footer {
 /*CSS DO NOVO MENU*/
 .container_btt {
 
-    position: absolute; /* Sai do fluxo normal */
-    top: 0; /* Ajuste conforme necessário */
-    right: 0; /* Ajuste conforme necessário */
-    width: auto; /* Impede que ocupe largura total */
-    height: auto; /* Impede que ocupe altura adicional */
-    z-index: 10; /* Mantém visível quando necessário */
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    width: auto; 
+    height: auto; 
+    z-index: 10; 
   
-  
+   
 }
+
 
 .menu_nav {
   position: fixed;
@@ -1012,4 +1013,16 @@ text-decoration: none;
 
 a:visited {
   color: inherit; 
+}
+
+.blur-background{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px); 
+  background-color: rgba(255, 255, 255, 0.1);
+  display: none; 
+  z-index: 2;
 }

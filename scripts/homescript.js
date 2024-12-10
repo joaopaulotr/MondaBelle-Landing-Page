@@ -202,15 +202,18 @@ const items = document.querySelectorAll('.item img');
     const menuButton = document.querySelector(".menu-button_nav");
     const menuNav = document.querySelector(".menu_nav");
     const closeButton = document.querySelector(".close-button_nav");
-  
-    // Abrir o menu lateral
+    const blur = document.getElementById("blurbk");
+
+
     menuButton.addEventListener("click", () => {
       menuNav.style.transform = "translateX(0)";
+      blur.style.display = "flex";
+
     });
   
-    // Fechar o menu lateral
     closeButton.addEventListener("click", () => {
       menuNav.style.transform = "translateX(100%)";
+      blur.style.display = "none";
     });
   });
   
