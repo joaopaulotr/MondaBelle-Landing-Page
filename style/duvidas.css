@@ -84,30 +84,34 @@
   background-color: #555;
 }
 
-/* Estilos responsivos */
+/* Estilo responsivo para telas menores */
 @media (max-width: 768px) {
-  .input-group {
-    flex-direction: column;
-    gap: 15px;
+  .input-gp {
+    flex-direction: column; /* Empilha os campos */
+    gap: 15px; /* Adiciona espaço entre os campos */
+  }
+
+  .input-field {
+    width: 100%; /* Garante que o campo ocupe toda a largura */
   }
 }
 
 @media (max-width: 480px) {
   .duvidas-section {
-    margin: 20px;
-    padding: 15px;
+    margin: 20px; /* Ajusta o espaçamento lateral */
+    padding: 15px; /* Reduz o padding */
   }
 
   .duvidas-section h2 {
-    font-size: 20px;
+    font-size: 20px; /* Ajusta o tamanho do título */
   }
 
   .duvidas-section p {
-    font-size: 12px;
+    font-size: 12px; /* Ajusta o tamanho do texto */
   }
 
   .submit-button {
-    font-size: 14px;
-    padding: 8px;
+    font-size: 14px; /* Reduz o tamanho do botão */
+    padding: 10px; /* Ajusta o padding */
   }
 }

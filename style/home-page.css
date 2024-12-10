@@ -311,6 +311,16 @@ h6 {
     background-image: url("../assets/banneroriginacelular.png");
   }
 }
+
+.article {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0;
+  border: none;
+  background-color: transparent; 
+}
+
 .text-content {
   width: 200px;
   height: auto;
@@ -366,7 +376,7 @@ h6 {
 
 @media screen and (max-width: 1218px) {
   .grid-one-content {
-    height: 44rem;
+    height: auto;
   }
   .article {
     padding-top: 15px;
