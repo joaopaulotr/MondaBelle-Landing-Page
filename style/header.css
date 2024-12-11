@@ -24,10 +24,10 @@
 
 .desativalogo {
   position: relative; 
-  width: 180px;
+  width: 180px !important;
   top: 0;
-  left: 25px;
-  margin-right: 100px;
+  left: 0 !important;
+  right: 30%;
   transform: scale(0.9); /* Reduz o tamanho da logo */
   transition: transform 0.3s ease; /* Suaviza a transição */
 }
