@@ -1,3 +1,5 @@
+import sensivel from './sensivel.js';
+
 function validacaoEmail(email) {
     const usuario = email.split("@");
   
@@ -23,7 +25,7 @@ if (buttonCadastro) {
     e.preventDefault(); // Evita o comportamento padrão do formulário
 
     // Inicializar o EmailJS com seu User ID
-    emailjs.init('Kwae4FGW5y3tlmx5M');  
+    emailjs.init(sensivel.public_key);  
 
     let erro = 0;
 
@@ -80,7 +82,7 @@ if (buttonCadastro) {
     duvida.value = "";
 
     document.querySelector('.overlay-duvida').style.display = 'flex';
-    emailjs.send('service_1y8dkaz', 'template_3y0ji5l', templateParams);
+    emailjs.send(sensivel.service_id, sensivel.template_id, templateParams);
 
     });
 }
