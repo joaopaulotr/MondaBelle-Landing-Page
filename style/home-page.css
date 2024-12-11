@@ -21,13 +21,14 @@ header {
 }
 
 .logo-nav {
-  width: 180px;
+  width: 180px ;
   height: auto;
 }
 
 header.rolagem {
   background-color: white;
   padding: 8px 3%;
+  
 }
 
 header.rolagem a,
@@ -1022,7 +1023,7 @@ text-decoration: none;
 }
 
 a:visited {
-  color: inherit; 
+  color: black; 
 }
 
 .blur-background{
@@ -1035,4 +1036,31 @@ a:visited {
   background-color: rgba(255, 255, 255, 0.1);
   display: none; 
   z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .menu_nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    background: #D9D9D9;
+    box-shadow: none;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 999;
+    font-size: 15px;
+    padding: 20px;
+  }
+
+  .menu_nav ul {
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .menu_nav li {
+    margin: 20px 0;
+    font-size: 18px;
+  }
 }
