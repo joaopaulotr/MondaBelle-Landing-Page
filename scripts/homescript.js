@@ -19,7 +19,6 @@ function menuShow() {
       document.querySelector(".iconm").src = "assets/close_black_36dp.svg";
     }
   }
-A
 }
 
 //Completando informações dos campos automaticamente:
