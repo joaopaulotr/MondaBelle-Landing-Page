@@ -951,7 +951,7 @@ footer {
 }
 
 .img-revend {
-  width: 50%;
+  width: auto;
   height: 400px;
   margin-bottom: 30px;
 }
