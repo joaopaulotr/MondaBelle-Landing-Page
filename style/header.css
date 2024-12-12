@@ -17,13 +17,84 @@
   left: 22.5%;
   width: 900px;
   height: auto;
-  transform: scale(1); 
+  transform: scale(1);
   transition: transform 0.3s ease;
 }
 
+@media (max-width: 1700px) {
+  .logo-nav {
+    width: 900px;
+    left: 26.3%;
+  }
+}
+@media (max-width: 1600px) {
+  .logo-nav {
+    width: 800px;
+    left: 25%;
+  }
+}
+@media (max-width: 1500px) {
+  .logo-nav {
+    width: 800px;
+    left: 26.5%;
+  }
+}
+@media (max-width: 1400px) {
+  .logo-nav {
+    width: 700px;
+    left: 26.5%;
+  }
+}
+@media (max-width: 1300px) {
+  .logo-nav {
+    width: 700px;
+    left: 26.5%;
+  }
+}
+@media (max-width: 1200px) {
+  .logo-nav {
+    width: 600px;
+    left: 29%;
+  }
+}
+@media (max-width: 1200px) {
+  .logo-nav {
+    width: 500px;
+    left: 33%;
+  }
+}
+@media (max-width: 1100px) {
+  .logo-nav {
+    width: 500px;
+    left: 30%;
+  }
+}
+@media (max-width: 1000px) {
+  .logo-nav {
+    width: 400px;
+    left: 34%;
+  }
+}
+@media (max-width: 900px) {
+  .logo-nav {
+    width: 300px;
+    left: 10%;
+    top: 25%;
+  }
+  .duvidasfreq {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  .logo-nav {
+    width: 200px;
+    left: 10%;
+    top: 35%;
+  }
+}
 
 .desativalogo {
-  position: relative; 
+  position: relative;
   width: 180px !important;
   top: 0;
   left: 0 !important;
@@ -82,7 +153,6 @@ header.rolagem .nav-item :hover {
   line-height: 27.5px; /* 171.875% */
   font-variant: all-small-caps;
   letter-spacing: 3.36px;
-
 }
 
 .logo h1 {
@@ -135,7 +205,7 @@ header.rolagem .nav-item :hover {
   letter-spacing: 3.36px;
 }
 
-#faqs .nav-link  {
+#faqs .nav-link {
   height: 22px;
 }
 
@@ -296,5 +366,4 @@ h6 {
 
 button {
   all: unset;
-  
 }
