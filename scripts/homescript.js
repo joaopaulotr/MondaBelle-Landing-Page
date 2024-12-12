@@ -1,25 +1,4 @@
-function menuShow() {
-  let menuMobile = document.querySelector(".mobile-menu");
-  const scrollPosition = window.scrollY;
 
-  if (scrollPosition < 525) {
-    if (menuMobile.classList.contains("open")) {
-      menuMobile.classList.remove("open");
-      document.querySelector(".iconm").src = "assets/menu_white_36dp.svg";
-    } else {
-      menuMobile.classList.add("open");
-      document.querySelector(".iconm").src = "assets/close_white_36dp.svg";
-    }
-  } else {
-    if (menuMobile.classList.contains("open")) {
-      menuMobile.classList.remove("open");
-      document.querySelector(".iconm").src = "assets/menu_black_36dp.svg";
-    } else {
-      menuMobile.classList.add("open");
-      document.querySelector(".iconm").src = "assets/close_black_36dp.svg";
-    }
-  }
-}
 
 //Completando informações dos campos automaticamente:
 let tel = document.querySelector('#tel');
@@ -117,22 +96,12 @@ function changeMenuOnScroll() {
   }
 }
 
-function changeCloseOnScroll() {
-  const headerLogo = document.querySelector(".iconm");
-  const scrollPosition = window.scrollY;
 
-  if (scrollPosition > 525) {
-    headerLogo.src = "assets/close_black_36dp.svg";
-  } else {
-    headerLogo.src ="assets/close_white_36dp.svg";
-  }
-}
 
 let headerLogo = document.querySelector(".iconm");
 
 window.addEventListener("scroll", changeLogoOnScroll);
 window.addEventListener("scroll", changeMenuOnScroll);
-headerLogo.addEventListener("click", changeCloseOnScroll);
 
 
 window.addEventListener('scroll', function() {
@@ -202,15 +171,24 @@ const items = document.querySelectorAll('.item img');
     const menuNav = document.querySelector(".menu_nav");
     const closeButton = document.querySelector(".close-button_nav");
     const blur = document.getElementById("blurbk");
+    const mobileButton = document.getElementById("mobile-button");
 
-
-    menuButton.addEventListener("click", () => {
+    mobileButton.addEventListener("click", () => {
       menuNav.style.transform = "translateX(0)";
       blur.style.display = "flex";
+      menuNav.style.width = "100%";
+    });
 
+    menuButton.addEventListener("click", () => {
+      menuNav.style.width = "50%";
+
+      menuNav.style.transform = "translateX(0)";
+      blur.style.display = "flex";
     });
   
     closeButton.addEventListener("click", () => {
+      menuNav.style.width = "50%";
+
       menuNav.style.transform = "translateX(100%)";
       blur.style.display = "none";
     });
